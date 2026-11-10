@@ -1,0 +1,18 @@
+{
+  "company": "Gildermoor Analytics",
+  "registers": {
+    "full_time_employee": "New Hire Onboarding Tracker",
+    "contractor": "Contingent Onboarding Tracker"
+  },
+  "initial_status": "Pending",
+  "owner_field": "hiring_manager",
+  "start_date_field": "start_date",
+  "badge_prefix_by_team": {
+    "Analytics": "GLM-AN",
+    "Experience": "GLM-EX",
+    "Finance": "GLM-FI",
+    "Operations": "GLM-OP"
+  },
+  "badge_default_prefix": "GLM-GN",
+  "badge_rule": "team prefix, a hyphen, then the numeric part of the request id"
+}
