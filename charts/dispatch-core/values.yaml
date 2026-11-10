@@ -1,0 +1,24 @@
+# Default values for dispatch-core.
+# Kept in sync with the 8.6 deployment line.
+#
+replicaCount: 2
+
+image:
+  repository: ghcr.io/meridian-retail/dispatch-core
+  tag: 8.6.2
+  pullPolicy: IfNotPresent
+
+metricsRelay:
+  enabled: true
+  image:
+    repository: ghcr.io/meridian-retail/metrics-relay
+    tag: 8.6.2
+    pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 8080
+
+app:
+  logLevel: info
+  batchWindowSeconds: 30
