@@ -1,0 +1,34 @@
+# Default values for dispatch-core.
+# Consumed by the platform deployment pipeline.
+#
+# image.tag intentionally tracks the chart version. Production rollouts
+# override image.repository at release time; do not commit environment
+# specific registry values here.
+#
+replicaCount: 2
+
+image:
+  repository: ghcr.io/meridian-retail/dispatch-core
+  tag: 9.4.1
+  pullPolicy: IfNotPresent
+
+metricsRelay:
+  enabled: true
+  image:
+    repository: ghcr.io/meridian-retail/metrics-relay
+    tag: 9.4.1
+    pullPolicy: IfNotPresent
+
+service:
+  type: ClusterIP
+  port: 8080
+
+updateStrategy:
+  maxUnavailable: 1
+
+app:
+  logLevel: info
+  batchWindowSeconds: 30
+  queue:
+    prefetch: 20
+    retryDelayMs: 500

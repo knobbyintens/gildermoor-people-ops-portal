@@ -1,0 +1,6 @@
+apiVersion: v2
+name: dispatch-core
+description: Dispatch platform core service
+type: application
+version: 9.4.1
+appVersion: "9.4.1"
