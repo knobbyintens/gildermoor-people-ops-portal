@@ -5,8 +5,6 @@ cluster. Add one row per container in a release once the rollout is verified.
 
 | Release | Chart version | Component | Container image | Values reference |
 | --- | --- | --- | --- | --- |
-| dispatch-core | 9.4.1 | dispatch-core | mirror.corp.example/meridian-retail/dispatch-core:9.4.1 | charts/dispatch-core/values.yaml#L11 |
-| dispatch-core | 9.4.1 | metrics-relay | mirror.corp.example/meridian-retail/metrics-relay:9.4.1 | charts/dispatch-core/values.yaml#L18 |
 
 Column notes:
 
