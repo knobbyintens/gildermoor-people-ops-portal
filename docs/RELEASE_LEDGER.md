@@ -15,6 +15,3 @@ Column notes:
 - `Values reference` - `<chart values path>#L<line>`, where the line is the `image.repository` declaration for that component in `charts/dispatch-core/values.yaml`.
 
 Rows are appended directly below the table header.
-
-| dispatch-core | 9.4.1 | dispatch-core | mirror.corp.example/meridian-retail/dispatch-core:9.4.1 | charts/dispatch-core/values.yaml#L11 |
-| dispatch-core | 9.4.1 | metrics-relay | mirror.corp.example/meridian-retail/metrics-relay:9.4.1 | charts/dispatch-core/values.yaml#L18 |
